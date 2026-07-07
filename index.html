@@ -305,6 +305,89 @@
 
   .contact-links { display: flex; gap: 16px; flex-wrap: wrap; }
 
+  .resume-section-content { max-width: 900px; }
+
+  .resume-block {
+    margin-bottom: 48px;
+  }
+
+  .resume-block h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    margin-bottom: 24px;
+    color: var(--text);
+    border-bottom: 2px solid var(--accent-light);
+    padding-bottom: 12px;
+  }
+
+  .resume-entry {
+    margin-bottom: 32px;
+  }
+
+  .resume-entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .resume-entry-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .resume-entry-meta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--muted);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+  }
+
+  .resume-entry-subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+
+  .resume-entry-content {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+  }
+
+  .resume-entry-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 8px;
+  }
+
+  .resume-entry-content li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+  }
+
+  .resume-entry-content li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+  }
+
+  .resume-tech {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    margin-top: 12px;
+    font-weight: 500;
+  }
+
   footer {
     border-top: 1px solid var(--border);
     padding: 32px 48px;
@@ -340,6 +423,7 @@
   <a href="#" class="nav-name">Audrey Howley</a>
   <ul class="nav-links">
     <li><a href="#projects">Projects</a></li>
+    <li><a href="#resume">Resume</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -350,7 +434,7 @@
     <div class="hero-eyebrow">CS Student @ Wake Forest &nbsp;|&nbsp; Full-Stack Developer</div>
     <h1>Building things<br>that <em>connect</em> ideas.</h1>
     <p class="hero-desc">
-      I'm Audrey — a software engineering intern at Fidelity Investments and CS student at Wake Forest University. I build full-stack applications that solve real problems, with a focus on thoughtful architecture and clean user experiences.
+      I'm Audrey, and I a software engineering intern at Fidelity Investments as well as a senior CS Major and Mathematics Minor at Wake Forest University. I build full-stack applications that solve real problems, with a focus on thoughtful architecture and clean user experiences.
     </p>
     <p class="hero-stack">Full-stack: React · TypeScript · Java · Spring Boot · PostgreSQL</p>
     <div class="hero-links">
@@ -474,6 +558,116 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<hr class="full-divider">
+
+<section id="resume">
+  <div class="section-label">Resume</div>
+  <div class="resume-section-content">
+    
+    <div class="resume-block">
+      <h3>Education</h3>
+      <div class="resume-entry">
+        <div class="resume-entry-header">
+          <div class="resume-entry-title">Wake Forest University</div>
+          <div class="resume-entry-meta">Winston-Salem, NC</div>
+        </div>
+        <div class="resume-entry-subtitle">Bachelor of Science in Computer Science, Minor in Mathematics — May 2027</div>
+        <div class="resume-entry-content">
+          <strong>Coursework:</strong> Data Structures & Algorithms, Programming Languages, Computer Systems, Software Engineering, Discrete Mathematics, Linear Algebra
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3>Experience</h3>
+      <div class="resume-entry">
+        <div class="resume-entry-header">
+          <div class="resume-entry-title">Full Stack Engineer Intern</div>
+          <div class="resume-entry-meta">June 2025 – August 2025</div>
+        </div>
+        <div class="resume-entry-subtitle">Fidelity Investments · Smithfield, RI</div>
+        <div class="resume-entry-content">
+          <ul>
+            <li>Designed and built 5 internal developer tools, including a query generator for enterprise databases</li>
+            <li>Developed full-stack features using Angular, TypeScript, Node.js, and Express</li>
+            <li>Integrated SQL queries to support efficient data retrieval and backend processing</li>
+            <li>Analyzed logs and debugged system issues using Splunk</li>
+            <li>Collaborated using Git and GitHub in a team-based development workflow</li>
+          </ul>
+        </div>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-entry-header">
+          <div class="resume-entry-title">Webmaster</div>
+          <div class="resume-entry-meta">Oct 2024 – May 2025</div>
+        </div>
+        <div class="resume-entry-subtitle">Old Gold & Black · Winston-Salem, NC</div>
+        <div class="resume-entry-content">
+          <ul>
+            <li>Published and formatted articles using WordPress for consistent digital presentation</li>
+            <li>Maintained and updated website content to ensure timely publication</li>
+            <li>Implemented usability improvements to enhance user experience</li>
+          </ul>
+        </div>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-entry-header">
+          <div class="resume-entry-title">Freelance Web Designer</div>
+          <div class="resume-entry-meta">Apr 2025 – Present</div>
+        </div>
+        <div class="resume-entry-subtitle">Wake Forest Student Organizations</div>
+        <div class="resume-entry-content">
+          <ul>
+            <li>Collaborated with 3 student organizations to gather requirements and implement enhanced layout, navigation, and usability</li>
+            <li>Redesigned and handed off the Student Government website to incoming administration for the first time in four years, improving navigation, visual consistency, and content organization</li>
+          </ul>
+        </div>
+      </div>
+      <div class="resume-entry">
+        <div class="resume-entry-header">
+          <div class="resume-entry-title">Computer Science Peer Tutor</div>
+          <div class="resume-entry-meta">Feb 2025 – Present</div>
+        </div>
+        <div class="resume-entry-subtitle">Wake Forest University</div>
+        <div class="resume-entry-content">
+          <ul>
+            <li>Tutored 4+ students a week in Data Structures, Programming Languages, and introductory CS</li>
+            <li>Assisted with debugging and understanding core programming concepts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3>Technical Skills</h3>
+      <div class="resume-entry">
+        <div class="resume-tech"><strong>Languages:</strong> Java, Python, C, SQL, JavaScript, TypeScript, R, Racket</div>
+        <div class="resume-tech"><strong>Frontend:</strong> React, Angular, HTML, CSS, Tailwind CSS, shadcn/ui</div>
+        <div class="resume-tech"><strong>Backend:</strong> Spring Boot, Express, Node.js, Spring Security</div>
+        <div class="resume-tech"><strong>Data & Auth:</strong> PostgreSQL, SQLite, JPA/Hibernate, JWT, OAuth 2.0</div>
+        <div class="resume-tech"><strong>Tools:</strong> Git, GitHub, Maven, npm, Postman, Splunk, Prisma, Cursor</div>
+      </div>
+    </div>
+
+    <div class="resume-block">
+      <h3>Leadership & Activities</h3>
+      <div class="resume-entry">
+        <div class="resume-entry-header">
+          <div class="resume-entry-title">Treasurer</div>
+          <div class="resume-entry-meta">Apr 2026 – Present</div>
+        </div>
+        <div class="resume-entry-subtitle">Women in Computer Science, Wake Forest University</div>
+        <div class="resume-entry-content">
+          <ul>
+            <li>Manage club finances and budget allocation for a student organization promoting gender diversity and inclusion in tech</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
 
